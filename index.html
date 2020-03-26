@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Interpret-ML</title>
+    <title>FairLearn</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -20,18 +20,15 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto text-center">
           <li class="nav-item active">
-            <a class="nav-link" href="https://microsoft.com">Section 01
+            <a class="nav-link" href="https://microsoft.com">What is Fairness?
               <span class="sr-only">(current)</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://microsoft.com">Section 02</a>
+            <a class="nav-link" href="https://microsoft.com">About Fairlearn</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://microsoft.com">Section 03</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://microsoft.com">Section 04</a>
+            <a class="nav-link" href="https://microsoft.com">Contribute</a>
           </li>
           <li>
             <a class="navbar-btn" href="https://microsoft.com">Github</a>
@@ -49,25 +46,9 @@
           <img class="img-fluid rounded" src="images/Main Graphic.png" alt="">
         </div>
         <div class="col-sm-12 col-lg-6 order-lg-0">
-          <h1 class="text-center text-md-left pb-4">Understand Your Models</h1>
-          <p class="text-center text-md-left pb-3">A toolkit for understanding and trusting models and modeling results that affect people's lives to explore questions like:</p>
-          <div class="row pb-3">
-            <div class="col-12 col-lg-6 pb-3">
-              <li class="img-fluid icon-01">What drives model predictions?</li>
-            </div>
-            <div class="col-12 col-lg-6 pb-3">
-              <li class="img-fluid icon-02">Why a model makes a certain decision?</li>
-            </div>
-            <div class="col-12 col-lg-6 pb-3">
-              <li class="img-fluid icon-03">How changing features affect model predictions?</li>
-            </div>
-            <div class="col-12 col-lg-6 pb-3">
-              <li class="img-fluid icon-04">How features interact to come up with model conclusions?</li>
-            </div>
-            <div class="col-12 col-lg-12">
-              <li class="img-fluid icon-05">What is the smallest change to the feature values that change the predictions to a predefined output?</li>
-            </div>
-          </div>
+          <h1 class="text-center text-md-left pb-4">A toolkit to assess and improve the fairness of AI systems.</h1>
+          <p class="text-center text-md-left pb-3">Fairlearn empowers developers of AI systems to assess their systems' fairness and mitigate observed unfairness.</p>
+          <p class="text-center text-md-left pb-3">Together, the components of Fairlearn empower data scientists and business leaders to navigate any trade-offs between fairness and model performance, and to select the mitigation algorithm that best fits their needs.</p>         
         <div class="row">
           <div class="col-sm-12 text-center text-md-left pb-5">
             <a class="masthead-btn text-center" href="https://microsoft.com">Get Started</a>
@@ -87,43 +68,29 @@
     <div class="container inner-box">
       <div class="row justify-content-lg-center">
         <div class="col-12 col-lg-8 text-center pt-5">
-          <h2 class="pb-4">What is Interpretability in AI?</h2>
-          <p class="dark">Gaining a comprehensive understanding of AI systems is a key requirement for data scientists, legal auditor, business decision makers, and providers of solutions to end users.</p>
-          <p class="dark pb-5">A bulk of state-of-the-art AI systems are still perceived as backbox difficult to decipher and understand. But businesses often ask questions such as “how can I trust your model?” or “Once deployed, is this model going to treat people fairly?”</p>
+          <h2 class="pb-4">What Do We Mean by Unfairness?</h2>
+          <p class="dark">There are many ways that an AI system can behave unfairly. Fairlearn focuses on negative impacts for groups of people, such as those deﬁned in terms of race, gender, age, or disability status.</p>
         </div>
       </div><!-- /.row -->
       <div class="row">
-        <div class="col-sm-12 text-center">
-          <h2 class="pb-5">Type of Interpretability</h2>
+        <div class="col-12 col-md-6">
+          <h4 class="pb-2">Quality of Service</h4>
+          <p class="dark">A voice recognition system might fail to work as well for women as it does for men.</p>
         </div>
-        <div class="col-md-4 mb-4">
-          <div class="card h-100">
-            <img class="card-img-top mx-auto pt-5 pb-4" src="images/Box Icon glass.svg">
-            <div class="card-body">
-              <h3 class="card-title">Glassbox</h3>
-              <p class="card-text dark pb-4">Inherently interpretable. You're creating the model for that purpose. A linear model is an example. This model comes first, research partners care about this the most.</p>
-            </div>
-          </div>
+        <div class="col-12 col-md-6">
+          <h4 class="pb-2">Allocation</h4>
+          <p class="dark">A system for screening loan or job applications might be much better at picking good candidates among white men than among other groups.</p>
         </div>
-        <div class="col-md-4 mb-4">
-          <div class="card h-100">
-            <img class="card-img-top mx-auto pt-5 pb-4" src="images/Box Icon gray.svg">
-            <div class="card-body">
-              <h3 class="card-title">Greybox</h3>
-              <p class="card-text dark pb-4">Interpret any model in a specific family of models. An explainer forr neurel network models, I.e. It gives some knowledge of the particular class of models.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 mb-4">
-          <div class="card h-100">
-            <img class="card-img-top mx-auto pt-5 pb-4" src="images/Box Icon black.svg">
-            <div class="card-body">
-              <h3 class="card-title">Blackbox</h3>
-              <p class="card-text dark pb-4">I have a model, and I'm going to use the algorithms to explain its behavior.</p>
-            </div>
-          </div>
+        <div class="col-12 col-md-12">
+          <h4 class="pb-2">Broader Picture</h4>
+          <p class="dark">Fairness is fundamentally a socio-technical challenge. There are many aspects of fairness, such as justice and due process, that are not captured by Fairlearn. Moreover , our fairness criteria cannot all be simultaneously satisﬁed, so our priority is enabling data scientists and business leaders to make trade-oﬀs that best ﬁt their needs.</p>
         </div>
       </div><!-- /.row -->
+      <div class="row justify-content-center">
+        <div class="col-sm-12 text-center pb-5">
+          <a class="masthead-btn text-center" href="https://microsoft.com">Learn More</a>
+        </div>
+      </div>
     </div><!-- /.container -->
   </div><!-- /.container-fluid -->
 
@@ -131,52 +98,39 @@
     <div class="container">
       <div class="row  justify-content-lg-center pt-5">
         <div class="col-12 col-lg-8 text-center">
-          <h2 class="pb-3">InterpretML</h2>
-          <p class="dark">InterpretML is a community-driven open source toolkit. Over the past few years, the machine learning interpretability landscape has been filled with techniques and open source packages. However, having to call different interpretability techniques from a set of very distinct repositories (each with a different API), and lack of unified visualizations to provide insights on model explanations have made the adoption of interpretability solutions slow and difficult.</p>
-          <p class="dark pb-5">Our goal is to enable everyone to leverage state-of-the-art interpretability techniques using a unified set of API calls and visualizations.</p>
+          <h2 class="pb-3">Use Fairlearn</h2>
+          <p class="dark">Fairlearn provides metrics, interactive visualizations, and algorithms that enable data scientists and AI developers to assess existing models, train new models, and ultimately choose the one that is right for their application.</p>
         </div>
-        <div class="col-sm-6">
+      </div>
+      <div class="row  justify-content-lg-center pt-5">
+        <div class="col-12 col-lg-12 text-center">
+          <h2 class="pb-3">Who should use Fairlearn</h2>
+        </div>
+        <div class="col-sm-3">
           <img class="img-fluid mx-auto interpretml-icons mb-3" src="images/easy-customization-icon.png" alt="">
-          <h4 class="text-center pb-3">Easy Customization</h4>
+          <h4 class="text-center pb-3">Data scientists and AI developers</h4>
           <p class="text-center text-lg-left dark pb-5">Practitioners can easily experiment with the selection of glassbox models or greybox/blackbox explainers to find the technique that’s right for their application to generate model explanations. They can also choose interactive visualizations to perform what if analysis and perturbation scenarios, learning about model’s potential unfairness or error and issues.</p>
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-3">
           <img class="img-fluid mx-auto interpretml-icons mb-3" src="images/community-focus-icon.png" alt="">
-          <h4 class="text-center pb-3">Community Focus</h4>
+          <h4 class="text-center pb-3">Model evaluators</h4>
           <p class="text-center text-lg-left dark pb-5">InterpretML is designed to make it simple for the research community to add new interpretability techniques comparing it to the state-of-the-art techniques available in the toolkit.</p>
         </div>
-      </div><!-- /.row -->
-
-
-      <div class="row">
-        <div class="col-sm-12 text-center">
-          <h2 class="pb-5">When Should I Use InterpretML?</h2>
+        <div class="col-sm-3">
+          <img class="img-fluid mx-auto interpretml-icons mb-3" src="images/community-focus-icon.png" alt="">
+          <h4 class="text-center pb-3">Business leaders</h4>
+          <p class="text-center text-lg-left dark pb-5">To understand and shape the impact of AI systems on users and other stakeholders To reach the full diversity of users with high-quality service To build trust with users and other stakeholders</p>
         </div>
-        <div class="col-md-3 mb-5">
-          <img class="img-fluid mx-auto interpretml-icons mb-3" src="images/researchers-icon.png" alt="">
-          <h4 class="text-center pb-3">Researchers</h4>
-          <p class="text-center text-lg-left dark">You are a researcher and want to easily integrate your machine learning interpretability technique and compare it to other state-of-the-art interpretability techniques.</p>
-        </div>
-        <div class="col-md-3 mb-5">
-          <img class="img-fluid mx-auto interpretml-icons mb-3" src="images/data-scientists-icon.png" alt="">
-          <h4 class="text-center pb-3">Data Scientists / ML Developers</h4>
-          <p class="text-center text-lg-left dark">You are a data scientist/machine learning developer and want to achieve a comprehensive understanding of your model, perform error analysis to uncover potential issues, and explain your model to non-technical stakeholders.</p>
-        </div>
-        <div class="col-md-3 mb-5">
-          <img class="img-fluid mx-auto interpretml-icons mb-3" src="images/legal-auditors-icon.png" alt="">
-          <h4 class="text-center pb-3">Legal Auditors</h4>
-          <p class="text-center text-lg-left dark">You are a business decision maker who wants to gain trust around machine learning models and make sure the model is not going to hurt the business or harm people.</p>
-        </div>
-        <div class="col-md-3 mb-5 text-center">
-          <img class="img-fluid mx-auto interpretml-icons mb-3" src="images/business-decisions-icon.png" alt="">
-          <h4 class="text-center pb-3">Business Decision Makers</h4>
-          <p class="text-center text-lg-left dark">You are a business decision maker who wants to gain trust around machine learning models and make sure the model is not going to hurt the business or harm people.</p>
+        <div class="col-sm-3">
+          <img class="img-fluid mx-auto interpretml-icons mb-3" src="images/community-focus-icon.png" alt="">
+          <h4 class="text-center pb-3">Students and researchers</h4>
+          <p class="text-center text-lg-left dark pb-5">To benchmark mitigation algorithms and contribute new ones</p>
         </div>
       </div><!-- /.row -->
     </div><!-- /.container -->
   </div><!-- /.container-fluid -->
 
-  <div class="container-fluid gradient-2 diagonal">
+  <div class="container-fluid gradient diagonal">
     <div class="row">
       <svg class="triangle-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
         <polygon fill="#FFFFFF" points="0,0 0,100 100,0"/>
@@ -185,44 +139,34 @@
 
       <div class="row justify-content-lg-center">
         <div class="col-12 col-lg-8 text-center">
-          <h2 class="heading-light pt-5 pb-5">Generating Model Explanations</h2>
-          <p class="pb-4">Automatically analyze predictions across different groups of people to identify potential harms of allocations or quality-of-service issues in your models.</p>
+          <h2 class="heading-light pt-5 pb-5">How to Assess Fairness with Fairlearn</h2>
         </div>
       </div>
 
       <div class="row justify-content-lg-center">
         <div class="col-sm-6 col-lg-4">
-           <img class="img-fluid mx-auto generating-model-icon pb-4" src="images/generating-model-explanations-icon.png" alt="">
+           <img class="img-fluid mx-auto generating-model-icon pb-4" src="images/Asset 21@2x 1.png" alt="">
         </div>
         <div class="col-sm-6 col-lg-4 align-self-center">
-          <h4 class="heading-light text-center text-lg-left pb-4">Global Feature Importance Values</h4>
-          <p class="text-center text-lg-left pb-4">Gain an understanding of entire model and what are the top factors affecting overall model predictions/comprehend the entire model by having a holistic view of feature importance values</p>
+          <h4 class="heading-light text-center text-lg-left pb-4">Select the fairness metric that best ﬁts your needs</h4>
+          <p class="text-center text-lg-left pb-4">Fairlearn supports a wide range of fairness metrics to evaluate the impact of model predictions on diﬀerent groups of people, covering both classiﬁcation and regression tasks.</p>
+          <li class="img-fluid check-icon">Classiﬁcation: demographic parity, parity in accuracy rate, worst-case accuracy rate, parity in recall, parity in precision, [see all the supported fairness metrics]</li>
+          <li class="img-fluid check-icon">Regression: parity in mean squared error , worst-case mean squared error , parity in log loss, worst-case log loss, [see all the supported fairness metrics]</li>
         </div>
       </div>
 
       <div class="row justify-content-lg-center">
         <div class="col-sm-6 col-lg-4 order-sm-2">
-          <img class="img-fluid mx-auto local-feature-icon pb-4" src="images/local-feature-icon.png" alt="">
+          <img class="img-fluid mx-auto local-feature-icon pb-4" src="images/Asset 23@2x 1.png" alt="">
         </div>
         <div class="col-sm-6 col-lg-4 align-self-center">
-          <h4 class="heading-light text-center text-lg-left pb-4">Local Feature Importance Values</h4>
-          <p class="text-center text-lg-left pb-4">Explore a single prediction and see how its features have affected model prediction</p>
+          <h4 class="heading-light text-center text-lg-left pb-4">Navigate trade-oﬀs between performance and fairness with interactive visualizations</h4>
+          <p class="text-center text-lg-left pb-4">Fairlearn provides an interactive visualization dashboard to investigate the performance and fairness of a single model and to compare multiple models.</p>
+          <li class="img-fluid check-icon">See how the performance and fairness metrics vary for diﬀerent sensitive features (e.g., race, gender,age).</li>
+          <li class="img-fluid check-icon">Select the model whose performance and fairness characteristics best ﬁt your needs.</li>
         </div>
-
       </div>
 
-      <div class="row justify-content-lg-center">
-
-        <div class="col-sm-6 col-lg-4">
-          <img class="img-fluid mx-auto group-feature-icon pb-4" src="images/group-feature-importance-icon.png" alt="">
-        </div>
-
-        <div class="col-sm-6 col-lg-4 align-self-center">
-          <h4 class="heading-light text-center text-lg-left pb-4">Group Feature Importance Values</h4>
-          <p class="text-center text-lg-left pb-4">Explore a cohort/subset of data points (e.g., female) and observe how model has made predictions for that group.</p>
-        </div>
-
-      </div><!-- /.row -->
       <div class="row">
         <svg class="triangle-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
           <polygon fill="#FFFFFF" points="0,100 100,0 100,100"/>
@@ -237,34 +181,34 @@
       <div class="row justify-content-lg-center">
 
         <div class="col-sm-12 col-lg-8 text-center">
-          <h2 class="pt-5 pb-2">Interactive Visualizations</h2>
-          <p class="dark">Explore and easily explain findings with interactive visualizations</p>
+          <h2 class="pt-5 pb-2">How to Mitigate Unfairness with Fairlearn</h2>
         </div>
       </div>
 
       <div class="row justify-content-lg-center">
-        <div class="col-sm-6 col-lg-4 order-sm-2">
-          <img class="img-fluid mx-auto interactive-visualization-icon pb-5" src="images/interactive-visualization-dashboard-icon.png" alt="">
+        <div class="col-sm-6 col-lg-4">
+          <img class="img-fluid mx-auto interactive-visualization-icon pb-5" src="images/Asset 23@2x 2.png" alt="">
         </div>
 
         <div class="col-sm-6 col-lg-4 align-self-center pb-4 order-sm-1">
-          <h4 class="text-center text-lg-left pb-4">Explore Your Data and Model Predictions</h4>
-          <li class="img-fluid check-icon">Explore your data and model predictions</li>
-          <li class="img-fluid check-icon">Observe top global features and in what direction they impact predictions</li>
-          <li class="img-fluid check-icon">Observe top local features for a particular datapoint and in what direction they impact that single prediction</li>
+          <h4 class="text-center text-lg-left pb-4">Select the fairness metric</h4>
+          <p class="text-center text-lg-left pb-4 dark">Fairlearn supports mitigation under several fairness metrics for both classiﬁcation and regression.</p>
+          <li class="img-fluid check-icon">Classiﬁcation: demographic parity, equalized odds, worst-case accuracy rate</li>
+          <li class="img-fluid check-icon">Regression: worst-case mean squared error , worst-case log loss</li>
         </div>
       </div>
 
       <div class="row justify-content-lg-center">
 
-        <div class="col-sm-6 col-lg-4">
-          <img class="img-fluid mx-auto interactive-visualization-icon pb-5" src="images/interactive-visualization-dashboard-icon.png" alt="">
+        <div class="col-sm-6 col-lg-4 align-self-center pb-4">
+          <h4 class="text-center text-lg-left pb-4">Select the mitigation algorithm</h4>
+          <p class="text-center text-lg-left pb-4 dark">Fairlearn provides mitigation algorithms that can be incorporated into diﬀerent stages of an AI pipeline.</p>
+          <li class="img-fluid check-icon">Model training—use one of our algorithmic reductions to turn your current training algorithm into an algorithm that optimizes model performance under fairness constraints</li>
+          <li class="img-fluid check-icon">Model postprocessing—take an existing model and ﬁnd the transformation of its output that optimizes performance under fairness constraints</li>
         </div>
 
-        <div class="col-sm-6 col-lg-4 align-self-center pb-4">
-          <h4 class="text-center text-lg-left pb-4">Explore Model Explanation</h4>
-          <li class="img-fluid check-icon">Filter data to observe global and local features importance of a subset of data</li>
-          <li class="img-fluid check-icon">Run what-if analysis to explore how model predictions would change as you perturb one or multiple features</li>
+        <div class="col-sm-6 col-lg-4">
+          <img class="img-fluid mx-auto interactive-visualization-icon pb-5" src="images/Asset 24@2x 1.png" alt="">
         </div>
 
       </div><!-- /.row -->
@@ -280,19 +224,31 @@
     <div class="container">
       <div class="row justify-content-lg-center">
         <div class="col-sm-12 col-lg-6 text-center pb-5">
-          <h1 class="pt-5 pb-4">Start Understanding Your Model's Behavior</h1>
-          <p class="pb-3">Lorem ipsum dolor sit amet, consectutur adipiscing elit. Sed pretium at est sit amet dictum.</p>
-          <a class="models-behavior-btn" href="https://microsoft.com">Watch Tutorials</a>
-          <a class="models-behavior-btn-transparent" href="https://microsoft.com">Github</a>
+          <h1 class="pt-5 pb-4">Getting started</h1>
+          <p class="pb-3">[Steps how to install Fairlearn in python? How to launch it in AzureML? This might not be a sub-title, this could be a button or something like that if that’s more appropriate]</p>
+          <a class="models-behavior-btn" href="https://microsoft.com">Install Fairlearn</a>
         </div>
       </div><!-- /.row --> 
     </div><!-- /.container -->
     <div class="row">
       <svg class="triangle-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-        <polygon fill="#061058" points="0,100 100,0 100,100"/>
+        <polygon fill="#FFFFFF" points="0,100 100,0 100,100"/>
       </svg>
     </div>
   </div><!-- /.container-fluid -->
+
+  <div class="container-fluid">
+    <div class="row justify-content-lg-center">
+      <div class="col-sm-12 col-lg-6 text-center pb-5">
+        <h2 class="pt-5 pb-2">Contribute to Fairlearn</h2>
+        <p class="dark">Fairlearn is a community-driven open-source project. It seeks to incorporate the best of research and practice in AI fairness and provide it to the community of data scientists, AI developers, and researchers.</p>
+        <img class="img-fluid mx-auto interpretml-icons mb-3" src="images/community-focus-icon.png" alt="">
+        <h4 class="text-center pb-3">Business leaders</h4>
+        <p class="dark">AI fairness is a rapidly evolving ﬁeld. We encourage researchers and practitioners to contribute new fairness metrics, visualization capabilities, and unfairness mitigation algorithms, to experiment and learn, and evolve the toolkit together.</p>
+        <a class="models-behavior-btn" href="https://microsoft.com">Install Fairlearn</a>
+      </div>
+    </div>
+  </div>
 
   <!-- Footer -->
   <footer class="page-footer pb-5">
@@ -304,22 +260,17 @@
         <div class="col-sm-12 col-md-10 d-flex align-items-center justify-content-md-end flex-column flex-md-row">
             <div class="mr-md-4">
               <a class="nav-link" href="https://microsoft.com">
-                <p class="mb-md-0">Section 01</p>
+                <p class="mb-md-0">What is Fairness?</p>
               </a>
             </div>
             <div class="mr-md-4">
               <a class="nav-link" href="https://microsoft.com">
-                <p class="mb-md-0">Section 02</p>
+                <p class="mb-md-0">About Fairlearn</p>
               </a>
             </div>
             <div class="mr-md-4">
               <a class="nav-link" href="https://microsoft.com">
-                <p class="mb-md-0">Section 03</p>
-              </a>
-            </div>
-            <div class="mr-md-4">
-              <a class="nav-link" href="https://microsoft.com">
-                <p class="mb-md-0">Section 04</p>
+                <p class="mb-md-0">Contribute</p>
               </a>
             </div>
             <a class="footer-btn-transparent text-center" href="https://microsoft.com">Github</a>
