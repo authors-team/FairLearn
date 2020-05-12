@@ -24,31 +24,31 @@ h1 {
   font-family: 'TT Commons Bold', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 42px;
-  line-height: 48px;
+  font-size: 34px;
+  line-height: 40px;
   color: #FFFFFF;
 }
 h2 {
   font-family: 'TT Commons Bold', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 28px;
-  line-height: 34px;
-  color: #061058;
+  font-size: 24px;
+  line-height: 30px;
+  color: #FFFFFF;
 }
 h3 {
-  font-family: 'TT Commons Regular', Arial, sans-serif;
+  font-family: 'TT Commons Bold', Arial, sans-serif;
   font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 28px;
-  color: #061058;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  color: #FFFFFF;
 }
 h4 {
-  font-family: 'TT Commons Regular', Arial, sans-serif;
+  font-family: 'TT Commons Bold', Arial, sans-serif;
   font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
+  font-weight: bold;
+  font-size: 24px;
   line-height: 18px;
   color: #061058;
 }
@@ -68,8 +68,8 @@ p {
   font-family: 'TT Commons Regular', Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 16px;
+  line-height: 24px;
   color: #FFFFFF;
 }
 .understand-your-models li {
@@ -86,9 +86,13 @@ p {
 
 /*UNIVERSAL*/
 .dark {
-  color: #878C97;
+  color: #061058;
 }
-.light{
+.medium {
+  color:#878C97;
+}
+
+.white{
   color: #FFFFFF;
 }
 .heading-light{
@@ -113,20 +117,42 @@ p {
 .navbar-btn {
   display: inline-block;
   color: white !important;
-  background-color: #064EFE;
-  padding: 9px 0px;
+  background-color: #2364D2;
+  padding: 11px 0px 7px 0px;
   width: 100px;
+  border-radius: 20px;
 }
 .navbar .navbar-toggler .icon-bar {
     color: pink !important;
 }
 .nav-logo{
-  width: 166px;
+  width: 130px;
   height: auto;
+}
+.navbar .nav-link:hover{
+    text-decoration: underline;
+    color: #212B36;
 }
 
 
-/*UNDERSTAND YOUR MODELS*/
+/*MASTHEAD*/
+.masthead-btn {
+  font-family: 'TT Commons Bold', Arial, sans-serif;
+  font-size: 14px;
+  display: inline-block;
+  color: white;
+  background-color: #2364D2;
+  padding: 11px 0px 7px 0px;
+  width: 140px;
+  border-radius: 20px;
+  box-shadow: 0px 20px 20px rgba(16, 16, 16, 0.1);
+}
+.masthead-btn:hover {
+    text-decoration: underline;
+    color: #FFFFFF;
+}
+
+
 li.icon-01 {
 background: url('../images/Icon-01.png') no-repeat left 0px;
 background-size: 30px 30px;
@@ -163,15 +189,6 @@ display: block;
 .gradient-2{
   background: linear-gradient(263.39deg, #061058 0%, #3B4ED3 100%);
 }
-.masthead-btn {
-  font-family: 'TT Commons Bold', Arial, sans-serif;
-  font-size: 14px;
-  display: inline-block;
-  color: #064EFE;
-  background-color: #FFFFFF;
-  padding: 9px 0px;
-  width: 120px;
-}
 .triangle-svg {
   bottom: 0;
   width: 100%;
@@ -184,15 +201,17 @@ display: block;
 }
 
 
-/*WHAT IS INTERPRETABILITY IN AI*/
+/*SECTION 1*/
+
+.inner-box {
+  border-radius: 20px;
+}
+
 .what-is-interpret-ai{
   position: relative;
   /*z-index: 5000;*/
   /*margin-top: -100px;*/
 }
-/*.inner-box {
-  background-color: white;
-}*/
 .card{
   box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.1);
   border: 0px solid rgba(0,0,0,.125);
@@ -205,22 +224,18 @@ display: block;
 
 
 /*INTERPRET ML*/
-.interpretml-icons {
-  display: block;
-  width: 50px;
-  height: 50px;
-}
+
 
 
 /*GENERATING MODEL EXPLANATIONS*/
 .generating-model-icon{
   display: block;
-  width: 220px;
+  width: 270px;
   height: auto;
 }
 .local-feature-icon{
   display: block;
-  width: 176px;
+  width: 256px;
   height: auto;
 }
 .group-feature-icon{
@@ -236,22 +251,29 @@ display: block;
   width: 240px;
   height: auto;
 }
-.interactive-visualization li {
+
+li.check-icon {
+  background: url('../images/check-icon.png') no-repeat  0 5px;
+  background-size: 13px 10px;
+  padding-left: 25px;
+  display: block;
   font-family: 'TT Commons Regular', Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 20px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  color: red;
 }
-li.check-icon {
-color: #878C97;
-background: url('../images/check-icon.png') no-repeat  0 5px;
-background-size: 13px 10px;
-padding-left: 25px;
-display: block;
+
+li.check-icon-dark {
+  background: url('../images/check-icon-dark.png') no-repeat  0 5px;
+  background-size: 13px 10px;
+  padding-left: 25px;
+  display: block;
+  font-family: 'TT Commons Regular', Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 
@@ -260,11 +282,16 @@ display: block;
   font-family: 'TT Commons Bold', Arial, sans-serif;
   font-size: 14px;
   display: inline-block;
-  color: #064EFE;
-  background-color: #FFFFFF;
-  padding: 9px 0px;
-  margin: 0px 9px;
-  width: 120px;
+  color: white;
+  background-color: #2364D2;
+  padding: 11px 0px 7px 0px;
+  width: 140px;
+  border-radius: 20px;
+  box-shadow: 0px 20px 20px rgba(16, 16, 16, 0.1);
+}
+.models-behavior-btn:hover {
+    text-decoration: underline;
+    color: #FFFFFF;
 }
 .models-behavior-btn-transparent {
   font-family: 'TT Commons Bold', Arial, sans-serif;
