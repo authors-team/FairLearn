@@ -24,63 +24,92 @@ h1 {
   font-family: 'TT Commons Bold', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 34px;
-  line-height: 40px;
+  font-size: 44px;
+  line-height: 48px;
   color: #FFFFFF;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
 h2 {
+  font-family: 'TT Commons Bold', Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 34px;
+  color: #FFFFFF;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+h3 {
   font-family: 'TT Commons Bold', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
   color: #FFFFFF;
-}
-h3 {
-  font-family: 'TT Commons Bold', Arial, sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 24px;
-  color: #FFFFFF;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
 h4 {
-  font-family: 'TT Commons Bold', Arial, sans-serif;
+  font-family: 'TT Commons Regular', Arial, sans-serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 24px;
   line-height: 18px;
   color: #061058;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
 h5 {
-  font-family: 'TT Commons Bold', Arial, sans-serif;
-  font-size: 20px;
-  line-height: 28px;
-  color: #061058;
-}
-h6 {
   font-family: 'TT Commons Bold', Arial, sans-serif;
   font-size: 18px;
   line-height: 18px;
   color: #061058;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+h6 {
+  font-family: 'TT Commons Regular', Arial, sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  color: #061058;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
 p {
   font-family: 'TT Commons Regular', Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 24px;
-  color: #FFFFFF;
-}
-.understand-your-models li {
-  font-family: 'TT Commons Regular', Arial, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
   line-height: 20px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  color: #FFFFFF;
+  color: #545454;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+.section-3 .tab-content{
+  margin-top: -11px;
+  background-color: #fff;
+  border: 0;
+  border-top: 1px solid #E9E9E9;
+  padding: 15px 0;
+}
+.section-3 .nav-tabs .nav-link.active{
+  border: 0;
+  border-bottom: 4px solid #064EFE;
+  position: relative;
+}
+.section-3 .nav-tabs li.active {
+    border-bottom: 4px solid #f3565d;
+    position: relative;
+}
+.section-3 .nav-tabs .nav-link {
+  border: red;
+}
+.section-3 .nav-tabs{
+    border: none;
+    margin: 0px;
 }
 
 
@@ -89,9 +118,8 @@ p {
   color: #061058;
 }
 .medium {
-  color:#878C97;
+  color: #878C97;
 }
-
 .white{
   color: #FFFFFF;
 }
@@ -105,54 +133,53 @@ p {
 
 /*NAVBAR*/
 .navbar{
+  z-index: 7000;
   background-color: white;
 }
 .navbar li {
   font-family: 'TT Commons Medium', Arial, sans-serif;
   font-size: 14px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
 .navbar li a {
   color: #212B36;
 }
 .navbar-btn {
+  font-size: 14px;
   display: inline-block;
   color: white !important;
-  background-color: #2364D2;
-  padding: 11px 0px 7px 0px;
+  background-color: #064EFE;
+  padding: 9px 0px 5px 0px;
   width: 100px;
-  border-radius: 20px;
 }
 .navbar .navbar-toggler .icon-bar {
     color: pink !important;
 }
 .nav-logo{
-  width: 130px;
+  width: 142px;
   height: auto;
 }
 .navbar .nav-link:hover{
     text-decoration: underline;
-    color: #212B36;
+    color: #064EFE;
 }
 
 
 /*MASTHEAD*/
-.masthead-btn {
-  font-family: 'TT Commons Bold', Arial, sans-serif;
-  font-size: 14px;
-  display: inline-block;
-  color: white;
-  background-color: #2364D2;
-  padding: 11px 0px 7px 0px;
-  width: 140px;
-  border-radius: 20px;
-  box-shadow: 0px 20px 20px rgba(16, 16, 16, 0.1);
+.masthead {
+  padding-bottom: 260px;
 }
-.masthead-btn:hover {
-    text-decoration: underline;
-    color: #FFFFFF;
+.masthead-subhead {
+  font-family: 'TT Commons Regular', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 34px;
+  color: #FFFFFF;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
-
-
 li.icon-01 {
 background: url('../images/Icon-01.png') no-repeat left 0px;
 background-size: 30px 30px;
@@ -184,10 +211,44 @@ padding-left: 50px;
 display: block;
 }
 .gradient{
-  background: linear-gradient(237.43deg, #41BDB6 2.46%, #58AAC4 100%);
+  background: linear-gradient(270deg, #2FBCDB 10.56%, #188ACA 92.14%);
 }
 .gradient-2{
   background: linear-gradient(263.39deg, #061058 0%, #3B4ED3 100%);
+}
+.masthead-btn {
+  font-family: 'TT Commons Bold', Arial, sans-serif;
+  font-size: 14px;
+  display: inline-block;
+  color: #FFFFFF;
+  background-color: #064EFE;
+  padding: 15px 0px 12px 0px;
+  width: 154px;
+  border-radius: 100px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+.masthead-btn:hover {
+  text-decoration: underline;
+  color: #FFFFFF;
+}
+.masthead-btn-transparent {
+  font-family: 'TT Commons Bold', Arial, sans-serif;
+  font-size: 14px;
+  display: inline-block;
+  color: #FFFFFF;
+  background-color: transparent;
+  padding: 15px 0px 12px 0px;
+  width: 154px;
+  outline-offset: -1px;
+  outline: 1px solid #fff;
+  border-radius: 100px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+.masthead-btn-transparent:hover {
+  text-decoration: underline;
+  color: #FFFFFF;
 }
 .triangle-svg {
   bottom: 0;
@@ -199,43 +260,60 @@ display: block;
   width: 30px;
   height: 30px;
 }
-
-
-/*SECTION 1*/
-
-.inner-box {
+.masthead-card{
   border-radius: 20px;
 }
-
-.what-is-interpret-ai{
-  position: relative;
-  /*z-index: 5000;*/
-  /*margin-top: -100px;*/
-}
-.card{
+.section-1-cards .card{
   box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.1);
   border: 0px solid rgba(0,0,0,.125);
 }
 .card-img-top{
   display: block;
-  width:86px;
+  width: 40px;
+  height: auto;
+}
+.card-img-top-b{
+  display: block;
+  width: 40px;
+  height: auto;
+}
+.blue-card{
+  background-color: #2364D2;
+}
+
+
+/*SECTION 1*/
+.card-blue{
+  background: #F5F8FF;
+  border: 0px solid rgba(0,0,0,.125);
+}
+.card-icon {
+  width: 30px;
   height: auto;
 }
 
 
-/*INTERPRET ML*/
-
-
-
-/*GENERATING MODEL EXPLANATIONS*/
+/*SECTION 2*/
+.section-2{
+  position: relative;
+  margin-top: -100px;
+  z-index:4000;
+}
+.how-it-works{
+  padding-top: 60px;
+}
+.box-icons {
+  width: 86px;
+  height: auto;
+}
 .generating-model-icon{
   display: block;
-  width: 270px;
+  width: 220px;
   height: auto;
 }
 .local-feature-icon{
   display: block;
-  width: 256px;
+  width: 176px;
   height: auto;
 }
 .group-feature-icon{
@@ -243,55 +321,101 @@ display: block;
   width: 180px;
   height: auto;
 }
+.inactive{
+  display: none;
+}
+.active{
+  display: block;
+}
+.inner-box {
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 0px 40px 100px rgba(0, 0, 0, 0.1);
+}
+.slide-row{
+  height: 2px;
+  width: 100;
+  background-color: blue;
+}
+.slide-holder{
+  height: 4px;
+  width: 50%;
+  background-color: pink;
+}
 
+/*SECTION 3*/
+.section-3{
+  margin-top: -100px;
+  background-color: white;
+}
+.floating-box{
+  position: relative;
+    z-index: 5000;
+    margin-top: -47px;
+}
+.element-image {
+  width: 357px;
+  height: auto;
+}
+.technique-card{
+  background-color: transparent;
+  border: 0px solid #FFFFFF;
+  border-radius: 5px;
+}
+.white-card{
+  background-color: white;
+}
+.local, .group, .feature {
+  display: none;
+}
 
-/*INTERACTIVE VISUALIZATIONS*/
+/*SECTION 4*/
 .interactive-visualization-icon{
   display: block;
-  width: 240px;
+  width: 220px;
   height: auto;
 }
 
+.section-4 li {
+  font-family: 'TT Commons Regular', Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 20px;
+  padding-top: 0px;
+  padding-bottom: 10px;
+  color: red;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
 li.check-icon {
+  color: #878C97;
   background: url('../images/check-icon.png') no-repeat  0 5px;
   background-size: 13px 10px;
   padding-left: 25px;
   display: block;
-  font-family: 'TT Commons Regular', Arial, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
-}
-
-li.check-icon-dark {
-  background: url('../images/check-icon-dark.png') no-repeat  0 5px;
-  background-size: 13px 10px;
-  padding-left: 25px;
-  display: block;
-  font-family: 'TT Commons Regular', Arial, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
 }
 
 
-/*START UNDERSTANDING MODELS BEHAVIOR*/
+/*SECTION 5*/
+.benefits-icons{
+  width: 26px;
+  height: auto;
+}
 .models-behavior-btn {
   font-family: 'TT Commons Bold', Arial, sans-serif;
   font-size: 14px;
   display: inline-block;
-  color: white;
-  background-color: #2364D2;
-  padding: 11px 0px 7px 0px;
-  width: 140px;
-  border-radius: 20px;
-  box-shadow: 0px 20px 20px rgba(16, 16, 16, 0.1);
+  color: #064EFE;
+  background-color: #FFFFFF;
+  padding: 14px 20px 10px 20px;
+  margin: 0px 9px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
 .models-behavior-btn:hover {
-    text-decoration: underline;
-    color: #FFFFFF;
+  text-decoration: underline;
+  color: #064EFE;
 }
 .models-behavior-btn-transparent {
   font-family: 'TT Commons Bold', Arial, sans-serif;
@@ -303,6 +427,33 @@ li.check-icon-dark {
   padding: 9px 0px;
   margin: 0px 9px;
   width: 120px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+/*SECTION 6*/
+.benefit-card{
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0px 40px 80px rgba(0, 0, 0, 0.05);
+  border:0;
+}
+.contribute-btn{
+  font-family: 'TT Commons Bold', Arial, sans-serif;
+  font-size: 14px;
+  display: inline-block;
+  color: #FFFFFF;
+  background-color: #064EFE;
+  padding: 14px 0px 10px 0px;
+  margin: 0px 9px;
+  width: 120px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+.contribute-btn:hover {
+  text-decoration: underline;
+  color: #FFFFFF;
 }
 
 
@@ -328,24 +479,86 @@ li.check-icon-dark {
   background-color: transparent;
   border: 1px solid #FFFFFF;
   width: 100px;
-  padding: 9px 0px;
+  padding: 9px 0px 5px 0px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+.footer-btn-transparent:hover {
+  text-decoration: underline;
+  color: #FFFFFF;
 }
 .footer-logo{
   width:121px;
   height: auto;
 }
+.footer-custom-margin{
+  margin-bottom: 0px;
+}
+.footer-italic {
+  font-family: 'TT Commons Regular', Arial, sans-serif;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: bold;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+.footer-bold {
+  font-family: 'TT Commons Bold', Arial, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: bold;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+.footer-small {
+  font-family: 'TT Commons Regular', Arial, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: bold;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+.footer-line{
+  width: 100%;
+  height:1px;
+  background-color: #FFFFFF;
+  opacity: .2;
+}
+.copyright-text{
+  padding-top: 11px;
+  margin-bottom: 0px;
+}
 
-@media only screen and (min-width: 768px) {
-  .card{
-    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+@media (min-width: 768px) {
+  .section-1-cards .card{
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.1);
   }
-  .what-is-interpret-ai{
+  .section-1-cards{
     position: relative;
     z-index: 5000;
-    margin-top: -220px;
+    /*margin-top: -210px;*/
   }
-  .inner-box {
-    background-color: white;
-    box-shadow: 0px 60px 100px rgba(0, 0, 0, 0.04);
+  .masthead {
+    padding-bottom: 160px;
   }
+}
+
+@media (min-width: 992px) {
+  .masthead {
+    padding-bottom: 160px;
+  }
+  .section-1-cards{
+    position: relative;
+    z-index: 5000;
+  }
+}
+
+@media (min-width: 1200px){
+  .container {
+    padding-top: 100px;
+    max-width: 1140px;
+  }
+/*  .masthead-cards{
+    margin-top: -250px;
+  }*/
 }
