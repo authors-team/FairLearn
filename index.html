@@ -38,41 +38,79 @@
   	</nav><!-- Navigation -->
 
   	<!-- MASTHEAD -->
-	<div class="container-fluid gradient masthead">
+	<div class="container-fluid gradient masthead mb-5">
 	    <div class="container pt-lg-5 pb-lg-5 ">
-	      <div class="row align-items-center justify-content-center">
-	        <div class="col-sm-12 col-lg-7 order-lg-1 text-center pt-5 pb-4 px-5">
-	          <img class="img-fluid rounded" src="images/main-graphic.png" alt="">
-	        </div>
-	        <div class="col-11 col-lg-5 order-lg-0">
-	          <h1 class="text-center text-md-left pb-2">Think fairness.<br>Build for everyone.</h1>
-	          <p class="white text-center text-md-left pb-3">A toolkit to assess and improve the fairness of machine learning models.</p>
-	        <div class="row">
-	          <div class="col-sm-12 text-center text-md-left">
-	          	<div class="row">
-	          		<div class="col-12 col-lg-5 pb-3">
-	            		<a class="masthead-btn text-center mr-0" href="https://github.com/Fairlearn/Fairlearn">Get Started</a>
-	            	</div>
-	            	<div class="col-12 col-lg-5">
-	           	 		<a class="masthead-btn-transparent text-center" href="https://Fairlearn.readthedocs.io/en/latest/">Learn more</a>
-	           	 	</div>
-	           	</div>
-	          </div>
-	        </div>
-	        </div>
-	      </div><!-- /.row -->
+	      	<div class="row align-items-center justify-content-center">
+		        <div class="col-sm-12 col-lg-6 order-lg-1 text-center pt-5 pb-4 px-5">
+		          <img class="img-fluid rounded" src="images/main-graphic.png" alt="">
+		        </div>
+		        <div class="col-11 col-lg-5 order-lg-0">
+		        	<div class="row">
+
+		        		<div class="col-12">
+		          			<h1 class="text-center text-md-left pb-2">Think fairness.<br>Build for everyone.</h1>
+		          			<p class="white text-center text-md-left pb-3">A toolkit to assess and improve the fairness of machine learning models.</p>
+		          		</div>
+
+		          		<div class="col-12 pb-4">
+							<div class="row ">
+								<div class="col-md-10 masthead-tabs">
+					            	<ul class="nav nav-tabs justify-content-left">
+					                <li class="nav-item text-center">
+					                	<a class="nav-link pb-2 active" data-toggle="tab" href="#mastheadAssess">
+					                    <h5>Assess</h5></a>
+					                </li>
+					                <li class="nav-item text-center">
+					                	<a class="nav-link pb-2" data-toggle="tab" href="#mastheadMitigate">
+					                    <h5>Mitigate</h5></a>
+					                </li>
+					            	</ul>
+					            	<div class="tab-content pt-4">
+					                	<div role="tabpanel" class="tab-pane active" id="mastheadAssess">
+					                   	 	<ul class="list-group media-list media-list-stream">
+					                        	<p>Use common fairness metrics and interactive dashboard to assess which groups of people may be negatively impacted.</p>
+					                    	</ul>
+					                	</div>
+						                <div role="tabpanel" class="tab-pane fade in" id="mastheadMitigate">
+						                    <ul class="list-group media-list media-list-stream">
+						                        <p>Use core algorithms to mitigate unfairness in your classification and regression models.</p>
+						                    </ul>
+						                </div>
+					            	</div>
+					        	</div>
+			        		</div><!-- ROW -->
+			        	</div>
+
+						<div class="col-12">
+					        <div class="row">
+					          	<div class="col-sm-12 text-center text-md-left">
+						          	<div class="row">
+						          		<div class="col-12 col-lg-5 pb-3">
+						            		<a class="masthead-btn text-center mr-0" href="https://github.com/Fairlearn/Fairlearn">Get Started</a>
+						            	</div>
+						            	<div class="col-12 col-lg-5">
+						           	 		<a class="masthead-btn-transparent text-center" href="https://Fairlearn.readthedocs.io/en/latest/">Learn more</a>
+						           	 	</div>
+						           	</div>
+					          	</div>
+					        </div>
+					    </div>
+
+		        	</div>
+		      	</div><!-- /.Col -->
+		    </div>
 		</div><!-- /.container -->
   	</div><!-- /.container-fluid -->
 
-  	<div class="container-fluid section-1 section-1-cards">
+  	<div class="container-fluid section-1 section-1-cards pt-5">
   		<div class="container">
   			<div class="row justify-content-lg-center pb-4">
   				<div class="col-8">
   					<h1 class="text-center dark">Why Fairlearn?</h1>
-  					<p class="text-center pt-4 pb-5">Fairlearn empowers developers and data scientists with capabilities to assess the fairness of their machine learning models and mitigate unfairness. Assess existing models and train new models with fairness in mind. Compare models and make trade-offs between fairness and model performance.</p>
+  					<p class="text-center pt-4 pb-5 white">Fairlearn empowers developers and data scientists with capabilities to assess the fairness of their machine learning models and mitigate unfairness. Assess existing models and train new models with fairness in mind. Compare models and make trade-offs between fairness and model performance.</p>
   				</div>
   			</div>
-  			<div class="row pb-4">
+  			<div class="row masthead-card-row pb-4">
 	  			<div class="col-md-4 mb-4">
 			      <div class="card h-100 masthead-card">
 			        <img class="card-img-top-b mx-auto pt-5 active icon-blue" src="images/icon-01.png">
@@ -106,25 +144,33 @@
 			</div>
   		</div>
   	</div><!-- /.section-1 -->
+
+  	<div class="container-fluid extra-gradient">
+  		<div class="container">
+  		</div>
+  	</div>
+
     
 	<div class="container-fluid section-2 gradient pb-5">
 		<div class="container">
-			<div class="row justify-content-lg-center how-it-works">
+			<div class="row justify-content-lg-center how-it-works pb-5">
 				<div class="col-12 col-lg-8 text-center">
-			  		<h2 class="white">How it Works</h2>
+			  		<h1 class="white">How it Works</h1>
 			  	</div>
 			</div>
 			<div class="row justify-content-lg-center floating-box">
 			  	<div class="col-12 col-lg-8 inner-box">
 			  		<div class="row justify-content-lg-center">
 			  			<div class="col-10">
-					  		<h3 class="pt-5 pb-3 dark text-center">Model Interpretability</h3>
+					  		<h3 class="pt-5 pb-3 dark text-center">What is Unfairness?</h3>
 					  		<p class="text-center pb-4">AI systems can sometimes make unfair predictions. Fairlearn focuses on negative impacts for groups of people, such as those defined in terms of race, gender, age, or disability status.</p>
-					  		<h4 class="dark">Model Interpretability</h4>
-					  		<p class="pb-4">AI systems can sometimes make unfair predictions. Fairlearn focuses on negative impacts for groups of people, such as those defined in terms of race, gender, age, or disability status.</p>
-					  		<h4 class="dark">Model Interpretability</h4>
-					  		<p class="pb-4">AI systems can sometimes make unfair predictions. Fairlearn focuses on negative impacts for groups of people, such as those defined in terms of race, gender, age, or disability status.</p>
-					  		<p class="text-center pb-4">Learn More</p>
+					  		<h4 class="dark">Quality of service</h4>
+					  		<p class="pb-4">A voice recognition system might fail to work as well for different demographics.</p>
+					  		<h4 class="dark">Allocation</h4>
+					  		<p class="pb-4">A system for screening loan or job application might be much better at picking good candidates among specific demographics.</p>
+					  		<a href="https://microsoft.com">
+					  			<p class="text-center pb-4">Learn More</p>
+					  		</a>
 					  	</div>
 					</div>
 				</div>
@@ -132,11 +178,16 @@
 		</div><!-- /.container -->
 	</div><!-- /.container-fluid -->
 
+	<div class="container-fluid extra-white">
+  		<div class="container">
+  		</div>
+  	</div>
+
 	<div class="container-fluid section-3 pb-5">
 		<div class="container">
 		  <div class="row justify-content-lg-center pb-5">
 		    <div class="col-sm-12 col-lg-8 text-center">
-		      <h2 class="pt-5 pb-2 dark">Assess Fairness</h2>
+		      <h1 class="pt-5 pb-2 dark">Assess Fairness</h1>
 		    </div>
 		  </div>
 
@@ -147,17 +198,17 @@
 
 		    <div class="col-md-5 align-self-center pb-4">
 		      	<h3 class="text-center text-lg-left pb-2 dark">1. Select the fairness metric</h3>
-		      	<p>For comomon types of algorrithms:</p>
+		      	<p>For comomon types of algorithms:</p>
 
 		      	<div class="row">
 					<div class="col-md-10">
 		            	<ul class="nav nav-tabs justify-content-left">
 		                <li class="nav-item text-center">
-		                	<a class="nav-link pb-4 active" data-toggle="tab" href="#currentPreferences">
+		                	<a class="nav-link pb-2 active" data-toggle="tab" href="#currentPreferences">
 		                    <h5>Classification</h5></a>
 		                </li>
 		                <li class="nav-item text-center">
-		                	<a class="nav-link pb-4" data-toggle="tab" href="#alternative">
+		                	<a class="nav-link pb-2" data-toggle="tab" href="#alternative">
 		                    <h5>Regression</h5></a>
 		                </li>
 		            	</ul>
@@ -194,45 +245,47 @@
 	</div><!-- /.container-fluid -->
 
 
-	<div class="container-fluid section-4 gradient">
+	<div class="container-fluid section-4 gradient pt-5">
 		<div class="container">
-			<div class="row justify-content-lg-center pb-5">
+			<div class="row justify-content-lg-center pb-4 pt-2">
 				<div class="col-12 text-center">
-					<h2 class="white">Mitigate Unfairness</h2>
+					<h1 class="white">Mitigate Unfairness</h1>
 				</div>
 			</div>
 			<div class="row justify-content-lg-center floating-box">
 			  	<div class="col-12 col-lg-10 inner-box">
-		  			<div class="row justify-content-lg-center py-3">
+		  			<div class="row justify-content-lg-center py-5">
+		  				<div class="col-12 pt-5 pb-5">
+		  					<h3 class="dark text-center">1. Select the fairness metric</h3>
+		  				</div>
 					    <div class="col-md-4">
-					      <img class="img-fluid mx-auto interactive-visualization-icon" src="images/graphic-01.png" alt="">
+					      <img class="img-fluid mx-auto interactive-visualization-icon" src="images/graphic-03.png" alt="">
 					    </div>
 
 					    <div class="col-md-5 align-self-center pb-4">
-					      	<h3 class="text-center text-lg-left pb-2 dark">1. Select the fairness metric</h3>
-					      	<p>For comomon types of algorrithms:</p>
+					      	<h3 class="text-center text-lg-left pb-2 dark">2. Select the mitigation algorithm:</p>
 
 					      	<div class="row">
 								<div class="col-md-10">
 					            	<ul class="nav nav-tabs justify-content-left">
-					                <li class="nav-item text-center">
-					                	<a class="nav-link pb-4 active" data-toggle="tab" href="#currentPreferences">
-					                    <h5>Classification</h5></a>
+					                <li class="nav-item text-left">
+					                	<a class="nav-link pb-2 active" data-toggle="tab" href="#modelTraining">
+					                    <h5>At Model<br>Training</h5></a>
 					                </li>
-					                <li class="nav-item text-center">
-					                	<a class="nav-link pb-4" data-toggle="tab" href="#alternative">
-					                    <h5>Regression</h5></a>
+					                <li class="nav-item text-left">
+					                	<a class="nav-link pb-2" data-toggle="tab" href="#postProcessing">
+					                    <h5>At Model<br>Post-Processing</h5></a>
 					                </li>
 					            	</ul>
 					            	<div class="tab-content pt-4">
-					                	<div role="tabpanel" class="tab-pane active" id="currentPreferences">
+					                	<div role="tabpanel" class="tab-pane active" id="modelTraining">
 					                   	 	<ul class="list-group media-list media-list-stream">
-					                        	<p>Use metrics like demographic parity, parity in accuracy rate, etc.</p>
+					                        	<p>Use algorithmic techniques to convert a machine learning algorithm into one that optimizes performance under fairness constraints</p>
 					                    	</ul>
 					                	</div>
-						                <div role="tabpanel" class="tab-pane fade in" id="alternative">
+						                <div role="tabpanel" class="tab-pane fade in" id="postProcessing">
 						                    <ul class="list-group media-list media-list-stream">
-						                        <p>Use metrics like parity in mean squared error, worst-case mean squared error, etc.</p>
+						                        <p>For existing models, find output transformation that optimizes performance under fairness constraints</p>
 						                    </ul>
 						                </div>
 					            	</div>
@@ -241,14 +294,15 @@
 					    </div>
 		  			</div>
 
-					<div class="row justify-content-lg-center">
+					<div class="row justify-content-lg-center pb-5">
 					    <div class="col-md-4 align-self-center pb-4 order-2 order-md-1">
-					      <h3 class="text-center text-lg-left pb-2 dark">2. Assess the fairness of your model</h3>
-					      <li class="img-fluid check-icon">Use Fairlearn's visualization dashboard to investigate the fairness of a single model and to compare multiple models across different demographics</li>
+					      <h3 class="text-center text-lg-left pb-2 dark">3. Make trade-offs between fairness and performance</h3>
+					      <li class="img-fluid check-icon">See how model performance varies based on different fairness features</li>
+					      <li class="img-fluid check-icon">Compare multiple models side-by-side in the interactive dashboard and select the desired model</li>
 					    </div>
 
 					    <div class="col-md-4 order-1 order-md-2">
-					      <img class="img-fluid mx-auto interactive-visualization-icon pb-5" src="images/graphic-02.png" alt="">
+					      <img class="img-fluid mx-auto interactive-visualization-icon pb-5" src="images/graphic-04.png" alt="">
 					    </div>
 
 					</div><!-- /.row -->
@@ -257,49 +311,58 @@
 		</div>
 	</div>
 
+	<div class="container-fluid extra-white">
+  		<div class="container">
+  		</div>
+  	</div>
+
 	<div class="container-fluid section-5 py-5">
 		<div class="container">
-			<div class="row justify-content-lg-center pb-5">
+			<div class="row justify-content-lg-center pt-5 pb-5">
 				<div class="col-12 text-center">
-					<h2 class="dark">Who Can Benefit from Fairlearn?</h2>
+					<h1 class="dark">Who Can Benefit from Fairlearn?</h1>
 				</div>
 			</div>
 			<div class="row justify-content-lg-center pb-5">
 				<div class="col-12 col-lg-3 text-center text-lg-left">
 					<div class="card h-100 benefit-card py-4 px-4">
-						<img class="img-fluid benefits-icons pb-3" src="images/icon-04.png">
-						<h3 class="dark pb-2">Data Scientists and Machine Learning Developers</h3>
-						<p>Assess model fairness during training and deployment</p>
-						<p>Compare models and make trade-offs between fairness and performance</p>
+						<img class="img-fluid benefits-icons icon-blue pb-3" src="images/icon-04.png">
+						<img class="img-fluid benefits-icons icon-white pb-3" src="images/icon-04-white.png">
+						<h3 class="dark pb-2 benefit-text">Data Scientists and Machine Learning Developers</h3>
+						<p class="benefit-text">Assess model fairness during training and deployment</p>
+						<p class="benefit-text">Compare models and make trade-offs between fairness and performance</p>
 					</div>
 				</div>
 				<div class="col-12 col-lg-3 text-center text-lg-left">
 					<div class="card h-100 benefit-card py-4 px-4">
-						<img class="img-fluid benefits-icons pb-3" src="images/icon-05.png">
-						<h3 class="dark pb-2">Model Evaluators</h3>
-						<p>Assess the impact of a model on specific groups of people</p>
+						<img class="img-fluid benefits-icons icon-blue pb-3" src="images/icon-05.png">
+						<img class="img-fluid benefits-icons icon-white pb-3" src="images/icon-05-white.png">
+						<h3 class="dark pb-2 benefit-text">Model Evaluators</h3>
+						<p class="benefit-text">Assess the impact of a model on specific groups of people</p>
 					</div>
 				</div>
 				<div class="col-12 col-lg-3 text-center text-lg-left">
 					<div class="card h-100 benefit-card py-4 px-4">
-						<img class="img-fluid benefits-icons pb-3" src="images/icon-06.png">
-						<h3 class="dark pb-2">Business Leaders</h3>
-						<p>Understand the impact of AI and machine learning systems on customers</p>
-						<p>Build trust with customers and stakeholders</p>
+						<img class="img-fluid benefits-icons icon-blue pb-3" src="images/icon-06.png">
+						<img class="img-fluid benefits-icons icon-white pb-3" src="images/icon-06-white.png">
+						<h3 class="dark pb-2 benefit-text">Business Leaders</h3>
+						<p class="benefit-text">Understand the impact of AI and machine learning systems on customers</p>
+						<p class="benefit-text">Build trust with customers and stakeholders</p>
 					</div>
 				</div>
 				<div class="col-12 col-lg-3 text-center text-lg-left">
 					<div class="card h-100 benefit-card py-4 px-4">
-						<img class="img-fluid benefits-icons pb-3" src="images/icon-07.png">
-						<h3 class="dark pb-2">Students and researchers</h3>
-						<p>To benchmark mitigation algorithms and contribute new ones</p>
+						<img class="img-fluid benefits-icons icon-blue pb-3" src="images/icon-07.png">
+						<img class="img-fluid benefits-icons icon-white pb-3" src="images/icon-07-white.png">
+						<h3 class="dark pb-2 benefit-text">Students and researchers</h3>
+						<p class="benefit-text">To benchmark mitigation algorithms and contribute new ones</p>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<div class="container-fluid section-6 gradient">
+	<div class="container-fluid section-6 gradient py-5">
 		<div class="container">
 		  <div class="row justify-content-lg-center">
 		    <div class="col-sm-12 col-lg-6 text-center pb-5">
@@ -310,13 +373,13 @@
 		</div><!-- /.container -->
 	</div><!-- /.container-fluid -->
 
-	<div class="container-fluid section-7">
+	<div class="container-fluid section-7 py-5">
 		<div class="container">
 			<div class="row justify-content-lg-center">
 				<div class="col-12 col-lg-6 text-center">
-					<h2 class="dark pt-4 pb-3">Contribute to Fairlearn</h2>
+					<h2 class="dark pt-5 pb-3">Contribute to Fairlearn</h2>
 					<p>We encourage you to join the effort and contribute feedback, metrics, algorithms, visualizations, ideas and more, so we can evolve the toolkit together!</p>
-					<a class="contribute-btn" href="https://microsoft.com">Github</a>
+					<a class="contribute-btn mb-5" href="https://microsoft.com">Github</a>
 				</div>
 			</div>
 		</div>

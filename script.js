@@ -20,6 +20,27 @@ $(document).ready(function() {
     }
   );
 
+
+  $(".benefit-card").hover(
+    function() {
+      $(this).addClass('blue-card').css('cursor', 'pointer'); 
+      $(".benefit-text", this).addClass('white');
+      $(".icon-blue", this).addClass('inactive');
+      $(".icon-blue", this).removeClass('active');
+      $(".icon-white", this).addClass('active');
+      $(".icon-white", this).removeClass('inactive');
+    }, function() {
+      $(this).removeClass('blue-card');
+      $(".icon-blue", this).addClass('active');
+      $(".icon-blue", this).removeClass('inactive');
+      $(".icon-white", this).removeClass('active');
+      $(".icon-white", this).addClass('inactive');
+      $(".benefit-text", this).removeClass('white');
+    }
+  );
+
+
+
   $(".tc-1").hover(
     function() {
       $(this).addClass('white-card').css('cursor', 'pointer'); 
