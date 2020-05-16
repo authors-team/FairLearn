@@ -4,7 +4,12 @@
 	    <!-- Required meta tags -->
 	    <meta charset="utf-8">
 	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	    <title>Fairlearn</title>
+		<meta property="og:title" content="Fairlearn">
+		<meta property="og:type" content="website"/>
+		<meta property="og:description" content="An open source toolkit for assessing and improving fairness in AI">
+		<meta property="og:image" content="images/fairlearn-meta-image.jpg">
+		<meta property="og:url" content="http://fairlearn.github.io">
+		<link rel="shortcut icon" type="images/x-icon" href="images/fairlearn-favicon.ico"/>
 	    <!-- Bootstrap CSS -->
 	    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	    <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -85,10 +90,10 @@
 					          	<div class="col-sm-12 text-center text-md-left">
 						          	<div class="row">
 						          		<div class="col-12 col-lg-4 pb-3">
-						            		<a class="masthead-btn text-center mr-0" href="https://github.com/Fairlearn/Fairlearn">Get Started</a>
+						            		<a class="masthead-btn text-center mr-0" href="https://fairlearn.github.io/quickstart.html">Get Started</a>
 						            	</div>
 						            	<div id="about-fairlearn"  class="pb-4 pb-lg-0 col-12 col-lg-4">
-						           	 		<a class="masthead-btn-transparent text-center" href="https://Fairlearn.readthedocs.io/en/latest/">API Docs</a>
+						           	 		<a class="masthead-btn-transparent text-center" href="https://fairlearn.github.io/api_reference/index.html">API Docs</a>
 						           	 	</div>
 						           	</div>
 					          	</div>
@@ -216,6 +221,9 @@
 		                	<div role="tabpanel" class="tab-pane active" id="currentPreferences">
 		                   	 	<ul class="list-group media-list media-list-stream">
 		                        	<p>Use metrics like demographic parity, parity in accuracy rate, etc.</p>
+		                        	<a href="https://github.com/fairlearn/fairlearn#fairlearn-algorithms">
+		                        		<p class="tab-links">See Supported Fairness Metrics</p>
+		                        	</a>
 		                    	</ul>
 		                	</div>
 			                <div role="tabpanel" class="tab-pane fade in" id="alternative">
@@ -254,6 +262,9 @@
 		  			<div class="row justify-content-lg-center py-5">
 		  				<div class="col-12 pt-5 pb-5">
 		  					<h3 class="dark text-center bold">1. Select the fairness metric</h3>
+		  					<a href="https://github.com/fairlearn/fairlearn#fairlearn-algorithms">
+		                        <p class="text-center tab-links">See Supported Fairness Metrics</p>
+		                    </a>
 		  				</div>
 					    <div class="col-12 col-md-5 col-lg-4">
 					      <img class="pb-5 pb-lg-0 img-fluid mx-auto interactive-visualization-icon" src="images/graphic-03.png" alt="">
@@ -269,13 +280,13 @@
 					                </li>
 					                <li class="nav-item text-left">
 					                	<a class="nav-link pb-2" data-toggle="tab" href="#postProcessing">
-					                    <h6 class="gray">During<br>Post-Processing</h6></a>
+					                    <h6 class="gray">During<br>Postprocessing</h6></a>
 					                </li>
 					            	</ul>
 					            	<div class="tab-content pt-4">
 					                	<div role="tabpanel" class="tab-pane active" id="modelTraining">
 					                   	 	<ul class="list-group media-list media-list-stream">
-					                        	<p>Use algorithmic techniques to convert a machine learning algorithm into one that optimizes performance under fairness constraints</p>
+					                        	<p>Use algorithmic techniques to convert a standard machine learning algorithm into one that optimizes performance under fairness constraints</p>
 					                    	</ul>
 					                	</div>
 						                <div role="tabpanel" class="tab-pane fade in" id="postProcessing">
@@ -377,7 +388,7 @@
 				<div class="col-12 col-lg-6 text-center">
 					<h2 class="dark pt-5 pb-3">Contribute to Fairlearn</h2>
 					<p>We encourage you to join the effort and contribute feedback, metrics, algorithms, visualizations, ideas and more, so we can evolve the toolkit together!</p>
-					<a class="contribute-btn mb-5" href="https://github.com/fairlearn/fairlearn/blob/master/CONTRIBUTING.md">Contribute</a>
+					<a class="contribute-btn mb-5" href="https://fairlearn.github.io/contributor_guide/index.html">Contribute</a>
 				</div>
 			</div>
 		</div>
